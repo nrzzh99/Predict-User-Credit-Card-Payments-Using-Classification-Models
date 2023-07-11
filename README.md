@@ -3,13 +3,13 @@ This project aims to predict customers based on previous payments to classify wh
 
 X. Pegambilan Kesimpulan
 - Rata-rata umur nasabah adalah 35 tahun dengan rentang usia antara 21 sampai 69 tahun.
-- Rata-rata limit_balance (batas kredit) nasabah adalah 163,369.31 dengan standar deviasi 125,030.42. Nilai minimum limit_balance adalah 10,000 dan nilai maksimumnya adalah 800,000.
-- Rata-rata tagihan bulanan (bill_amt) nasabah pada bulan ke-3 sampai ke-6 adalah lebih tinggi dibandingkan bulan sebelumnya.
-- Rata-rata jumlah pembayaran (pay_amt) nasabah pada bulan ke-1 sampai ke-3 lebih rendah dibandingkan bulan berikutnya.
+- Rata-rata batas kredit nasabah adalah 163,369.31. Nilai minimum adalah 10,000 dan nilai maksimumnya adalah 800,000.
+- Rata-rata tagihan bulanan nasabah pada bulan ke-3 sampai ke-6 adalah lebih tinggi dibandingkan bulan sebelumnya.
+- Rata-rata jumlah pembayaran nasabah pada bulan ke-1 sampai ke-3 lebih rendah dibandingkan bulan berikutnya.
 - Proporsi nasabah yang mengalami default payment next month adalah sekitar 21%.
-- Mayoritas nasabah berjenis kelamin wanita (rata-rata 1.61).
-- Mayoritas nasabah memiliki pendidikan level 2 (rata-rata 1.85).
-- Mayoritas nasabah sudah menikah (rata-rata 1.56).
+- Mayoritas nasabah berjenis kelamin wanita.
+- Mayoritas nasabah memiliki pendidikan level 2.
+- Mayoritas nasabah sudah menikah.
 - Rata-rata nilai pay_0 dan pay_2 adalah mendekati 0, yang menunjukkan mayoritas nasabah membayar tagihan mereka pada waktu yang tepat.
 - Sedangkan nilai pay_5 dan pay_6 cenderung negatif, yang berarti sebagian besar nasabah melakukan pembayaran keterlambatan pada bulan tersebut.
 - mayoritas wanita yg melakukan default_payment_next_month ada 373 orang
