@@ -1,7 +1,20 @@
 # Predict-User-Credit-Card-Payments-Using-Classification-Models
+Objective :
 This project aims to predict customers based on previous payments to classify whether customers will fail to pay in the next month's payments or not
+Latar belakang masalah :
+Dalam menghadapi risiko pembayaran terlambat, perusahaan membutuhkan informasi yang akurat untuk mengelola risiko dengan lebih baik. perusahaan dapat mengidentifikasi pelanggan yang berpotensi gagal membayar lebih awal. Hal ini akan membantu mengurangi kerugian dan meningkatkan efisiensi dalam pengelolaan risiko.
 
-X. Pegambilan Kesimpulan
+Data ini berasal dari BigQuery dari database bernama credit_card_default
+- data ini terdiri dari 2965 baris dan 24 kolom
+- Terdapat beberapa kolom yang mengindikasikan informasi tentang pengguna, seperti jenis kelamin (sex), tingkat pendidikan (education_level), status pernikahan (marital_status), dan usia (age)
+- Terdapat kolom default_payment_next_month yang merupakan target prediksi dari model, yaitu apakah pengguna akan mengalami gagal bayar pada bulan berikutnya atau tidak.
+- Terdapat juga kolom limit_balance yang menunjukkan batas kredit pengguna
+
+Dari hasil confusion matrix, terlihat bahwa model memiliki kemampuan yang baik dalam memprediksi class 0(tidak akan mengalami keterlambatan pembayaran) dengan akurasi 94% pada true negative (class 0 diprediksi benar) dan 6% false positive (class 0 diprediksi salah). Namun, model memiliki kemampuan yang kurang baik dalam memprediksi class 1(akan mengalami keterlambatan pembayaran, hanya memiliki akurasi 40% pada true positive (class 1 diprediksi benar) dan 60% false negative (class 1 diprediksi salah)
+
+Model yg digunakan adalah Logistic Regression, SVM, Decision Tree, K-Neighbors (KNN), Naive Bayes, Random Forest dan Gradient Boosting
+serta menggunakan Cross Validation untuk menentukan model mana yg terbaik digunakan untuk dataset ini
+Pegambilan Kesimpulan
 - Rata-rata umur nasabah adalah 35 tahun dengan rentang usia antara 21 sampai 69 tahun.
 - Rata-rata batas kredit nasabah adalah 163,369.31. Nilai minimum adalah 10,000 dan nilai maksimumnya adalah 800,000.
 - Rata-rata tagihan bulanan nasabah pada bulan ke-3 sampai ke-6 adalah lebih tinggi dibandingkan bulan sebelumnya.
@@ -22,3 +35,7 @@ X. Pegambilan Kesimpulan
 - hyperparameter yg digunakan adalah gridsearch, tetapi antara sebelum dan sesudah di tuning, hasilnya sama, hanya saja untuk ROC AUC score mengalami penurunan setelah tuning
 - ketika mencoba menggunakan SMOTE, hasilnya untuk kelas minoritas terdapat peningkatan
 - setelah memasukan data infarence, data baru telah terklasifikasi masuk ke class 0 yg artinya tidak akan mengalami keterlambatan pembayaran
+- Kelebihannya adalah model dapat mengklasifikasi model dengan baik
+- Kekurangannya adalah mencoba mengukur menggunakan metriks lain seperti MSE
+
+
