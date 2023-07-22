@@ -1,6 +1,7 @@
 # Predict-User-Credit-Card-Payments-Using-Classification-Models
 Objective :
 This project aims to predict customers based on previous payments to classify whether customers will fail to pay in the next month's payments or not
+
 Latar belakang masalah :
 Dalam menghadapi risiko pembayaran terlambat, perusahaan membutuhkan informasi yang akurat untuk mengelola risiko dengan lebih baik. perusahaan dapat mengidentifikasi pelanggan yang berpotensi gagal membayar lebih awal. Hal ini akan membantu mengurangi kerugian dan meningkatkan efisiensi dalam pengelolaan risiko.
 
